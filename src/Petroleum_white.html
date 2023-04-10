@@ -16,6 +16,56 @@ span.cls_007{font-family:Times,serif;font-size:17.1px;color:rgb(14 28 127);font-
 div.cls_007{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 span.cls_008{font-family:monospace;font-size:16.1px;color:rgb(14 28 127);font-weight:normal;font-style:normal;text-decoration: none}
 div.cls_008{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+img.logos{
+    transform: rotate(270deg);
+    right: -154px;
+    width: 60%;
+    top: -147px;
+    position: relative;
+    filter: grayscale(100%);
+    opacity: .35;
+    display: flex;
+}
+img.logos1{
+    transform: rotate(270deg);
+    right: -154px;
+    width: 60%;
+    top: 100px;
+    position: relative;
+    filter: grayscale(100%);
+    opacity: .35;
+    display: flex;
+}
+img.logos2{
+    transform: rotate(270deg);
+    right: -154px;
+    width: 60%;
+    top: 54px;
+    position: relative;
+    filter: grayscale(100%);
+    opacity: .35;
+    display: flex;
+}
+img.logos3{
+    transform: rotate(270deg);
+    right: -154px;
+    width: 60%;
+    top: 229px;
+    position: relative;
+    filter: grayscale(100%);
+    opacity: .35;
+    display: flex;
+}
+img.logos4{
+    transform: rotate(270deg);
+    right: -154px;
+    width: 60%;
+    top: 395px;
+    position: relative;
+    filter: grayscale(100%);
+    opacity: .35;
+    display: flex;
+}
 -->
 </style>
 <script type="text/javascript" src="wz_jsgraphics.js"></script>
@@ -51,6 +101,7 @@ function myFunction() {
   document.querySelector("#billVal1").innerHTML = document.getElementById("billNo").value;
   document.querySelector("#fipVal").innerHTML = pad(getRandomInt(1,2),2);
   //document.querySelector("#denVal").innerHTML = den;
+  document.getElementById("productVal").innerHTML = document.getElementById("productID").value;
   window.alert("done");
 }
 </script>
@@ -58,46 +109,59 @@ function myFunction() {
 
 <div style="position:absolute;left:10%;padding:2%;margin-left:-121px;top:0px;width:312px;height:300px;border-style:groove;overflow:hidden;background-color: #bbbab5;top:10%;">
 	<div> Bill No....<input id="billNo" type="text" value="B6923"/> </div> </br>
-	<div> Local Id...<input id="localId" type="text" value="00016414"  /> </div> </br>
-	<div> Date........<input id="dateId" type="text" value="31/01/21" /> </div> </br>
-	<div> Time.......<input id="timeId" type="text"  value="12:21" /> </div> </br>
+	<div> Local Id...<input id="localId" type="text" value="00447658"  /> </div> </br>
+	<div> Date........<input id="dateId" type="text" value="31/01/23" /> </div> </br>
+	<div> Time.......<input id="timeId" type="text"  value="15:21" /> </div> </br>
 	<div> Vol.........<input id="volId" type="text" value='00015.00'/> </div> </br>
 	<div> Rate........<input id="rateId" type="text" value='092.52'/> </div> </br>
+	<div> Product........<input id="productID" type="text" value='Diesel'/> </div> </br>
 	<div> <input id="setBut" type="button" value='Set Values' onclick="myFunction()" style='background:green;color:white'/> </div> </br>
 	
 </div>
 
 <div style="position:absolute;left:50%;margin-left:-121px;top:0px;width:312px;height:792px;border-style:groove;overflow:hidden;background-color: white;top:2%">
 <div style="position:absolute;left:4.56px;top:0.00px" class="cls_002"><span class="cls_002"></span></div>
-<div style="position:absolute;left:84.76px;top:100.44px" class="cls_003"><img src="logo_w_2.png" style="
+<div style="position:absolute;left:84.76px;top:64.44px" class="cls_003"><img src="logo_w_2.png" style="
     width: 150px;
 "/></div>
-<div style="position:absolute;left:60.80px;top:247.20px" class="cls_005"><span class="cls_005">Welcomes You</span></div>
-<div style="position:absolute;left:24.00px;top:279.96px" class="cls_006"><span class="cls_006">Tel.</span></div>
-<div style="position:absolute;left:15.36px;top:312.84px" class="cls_006"><span class="cls_006">Receipt No.	:</span></div>
-<div style="position:absolute;left:146.16px;top:314.76px" class="cls_006"><span id="billVal1" class="cls_006">B6923</span></div>
-<div style="position:absolute;left:15.36px;top:331.24px" class="cls_007"><span class="cls_007">Local&#160 &#160Id</span></div>
-<div style="position:absolute;left:96.96px;top:332.44px" class="cls_007"><span class="cls_007">:</span></div>
-<div style="position:absolute;left:118.80px;top:332.20px" class="cls_007"><span id="localVal" class="cls_007">00016414</span></div>
+<div style="position:absolute;left:60.80px;top:215.20px" class="cls_005"><span class="cls_005">Welcomes You</span></div>
+
+	<div style="position:absolute;left:60.80px;top:247.20px" class="cls_005"><span class="cls_005logs"><img class="logos" src="./side-logo.png">
+		<img class="logos2" src="./side-logo.png">
+		<img class="logos3" src="./side-logo.png">
+		<img class="logos4" src="./side-logo.png">
+	</span></div>
+
+	<div style="position:absolute;left:24.00px;top:251.96px" class="cls_006"><span class="cls_006">LONKAR PETROLEUM</span></div>
+	<div style="position:absolute;left:24.00px;top:264.96px" class="cls_006"><span class="cls_006">LONKAR VASTI</span></div>
+	<div style="position:absolute;left:24.00px;top:277.96px" class="cls_006"><span class="cls_006">Z Corner</span></div>
+<div style="position:absolute;left:24.00px;top:292.96px" class="cls_006"><span class="cls_006">Tel. NO. : 9767248424</span></div>
+<div style="position:absolute;left:15.36px;top:312.84px" class="cls_006"><span class="cls_006">Receipt No.</span></div>
+	<div style="position:absolute;left:119.04px;top:312.84px" class="cls_006"><span class="cls_006">:</span></div>
+<div style="position:absolute;left:134.08px;top:314.76px" class="cls_006"><span id="billVal1" class="cls_006">B6923</span></div>
+<div style="position:absolute;left:15.36px;top:332.24px" class="cls_006"><span class="cls_006">Local ID    </span></div>
+	<div style="position:absolute;left:119.04px;top:332.96px" class="cls_006"><span class="cls_006"> : </span></div>
+<div style="position:absolute;left:134.80px;top:332.20px" class="cls_006"><span id="localVal" class="cls_006">00447658</span></div>
 <div style="position:absolute;left:15.36px;top:351.24px" class="cls_006"><span class="cls_006">FIP No.</span></div>
-<div style="position:absolute;left:96.00px;top:351.96px" class="cls_006"><span class="cls_006">:</span></div>
-<div style="position:absolute;left:118.08px;top:351.96px" class="cls_006"><span id="fipVal" class="cls_006">02</span></div>
+<div style="position:absolute;left:119.04px;top:351.96px" class="cls_006"><span class="cls_006">:</span></div>
+<div style="position:absolute;left:134.08px;top:351.96px" class="cls_006"><span id="fipVal" class="cls_006">01</span></div>
 <div style="position:absolute;left:15.36px;top:369.48px" class="cls_006"><span class="cls_006">Nozzle No.</span></div>
 <div style="position:absolute;left:119.04px;top:369.96px" class="cls_006"><span class="cls_006">:</span></div>
-<div style="position:absolute;left:135.36px;top:369.96px" class="cls_006"><span id="nozelVal" class="cls_006">04</span></div>
+<div style="position:absolute;left:135.36px;top:369.96px" class="cls_006"><span id="nozelVal" class="cls_006">03</span></div>
 <div style="position:absolute;left:15.36px;top:387.24px" class="cls_006"><span class="cls_006">Product</span></div>
-<div style="position:absolute;left:118.56px;top:387.48px" class="cls_006"><span class="cls_006">: Xtra Prem</span></div>
+	<div style="position:absolute;left:119.04px;top:387.24px" class="cls_006"><span class="cls_006">:</span></div>
+<div style="position:absolute;left:135.36px;top:387.48px" class="cls_006"><span id="productVal" class="cls_006">Diesel</span></div>
 <div style="position:absolute;left:15.36px;top:405.48px" class="cls_006"><span class="cls_006">Density</span></div>
 <div style="position:absolute;left:84.44px;top:405.72px" class="cls_006"><span class="cls_006">:</span></div>
 <div style="position:absolute;left:99.00px;top:405.72px" class="cls_006"><span  id="denVal" class="cls_006">734.5Kg/Cu.mtr</span></div>
 <div style="position:absolute;left:16.56px;top:423.48px" class="cls_006"><span class="cls_006">Preset Type:  Amount</span></div>
-<div style="position:absolute;left:15.84px;top:441.96px" class="cls_006"><span class="cls_006">Rate</span></div>
+<div style="position:absolute;left:15.84px;top:441.96px" class="cls_006"><span class="cls_006">Rate(Rs/L)</span></div>
 <div style="position:absolute;left:116.12px;top:441.48px" class="cls_006"><span class="cls_006">:</span></div>
 <div style="position:absolute;left:151.44px;top:441.48px" class="cls_006"><span id="rateVal" class="cls_006">092.52</span></div>
-<div style="position:absolute;left:15.36px;top:460.44px" class="cls_006"><span class="cls_006">Volume</span></div>
+<div style="position:absolute;left:15.36px;top:460.44px" class="cls_006"><span class="cls_006">Volume(L)</span></div>
 <div style="position:absolute;left:116.64px;top:459.48px" class="cls_006"><span class="cls_006">:</span></div>
 <div style="position:absolute;left:133.20px;top:459.24px" class="cls_006"><span id="volVal" class="cls_006">00005.40</span></div>
-<div style="position:absolute;left:14.64px;top:478.68px" class="cls_006"><span class="cls_006">Amount</span></div>
+<div style="position:absolute;left:14.64px;top:478.68px" class="cls_006"><span class="cls_006">Amount(Rs)</span></div>
 <div style="position:absolute;left:116.16px;top:477.72px" class="cls_006"><span class="cls_006">:</span></div>
 <div style="position:absolute;left:132.48px;top:477.24px" class="cls_006"><span id="amtVal" class="cls_006">00500.00</span></div>
 <div style="position:absolute;left:15.36px;top:513.48px" class="cls_006"><span class="cls_006">Vehicle No:  Not Entered</span></div>
@@ -108,7 +172,7 @@ function myFunction() {
 <div style="position:absolute;left:60.96px;top:572.52px" class="cls_006"><span id="dateVal" class="cls_006">31/01/20</span></div>
 <div style="position:absolute;left:146.96px;top:572.52px" class="cls_006"><span id="dateVal" class="cls_006">Time:</span></div>
 <div style="position:absolute;left:192.64px;top:572.52px" class="cls_006"><span id="timeVal"  class="cls_006">12:21</span></div>
-<div style="position:absolute;left:15.36px;top:610.20px" class="cls_006"><span class="cls_006">CSI No &#160  &#160 :</span></div>
+<div style="position:absolute;left:15.36px;top:610.20px" class="cls_006"><span class="cls_006">CSI No &#160  &#160 : 27AKVPL6509L1ZD</span></div>
 <div style="position:absolute;left:15.36px;top:628.44px" class="cls_006"><span class="cls_006">LSI No &#160  &#160 :</span></div>
 <div style="position:absolute;left:15.36px;top:648.12px" class="cls_006"><span class="cls_006">VAT No</span></div>
 <div style="position:absolute;left:69.12px;top:646.44px" class="cls_006"><span class="cls_006">&#160 :</span></div>
