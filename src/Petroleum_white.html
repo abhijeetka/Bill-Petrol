@@ -95,9 +95,13 @@ function myFunction() {
   document.getElementById("timeVal").innerHTML = document.getElementById("timeId").value;
   document.getElementById("volVal").innerHTML = pad(document.getElementById("volId").value,8);
   document.getElementById("rateVal").innerHTML = document.getElementById("rateId").value;
-  var num = document.getElementById("volId").value * document.getElementById("rateId").value;
+  var num = document.getElementById("amountId").value / document.getElementById("rateId").value;
   num = num.toFixed(2);
-  document.getElementById("amtVal").innerHTML=pad(num,8);
+  var amt = document.getElementById("amountId").value;
+  console.log(amt);
+  console.log(amt);
+  document.getElementById("amtVal").innerHTML=pad(amt,8);
+  document.getElementById("volVal").innerHTML=pad(num,8);
   document.querySelector("#billVal1").innerHTML = document.getElementById("billNo").value;
   document.querySelector("#fipVal").innerHTML = pad(getRandomInt(1,2),2);
   //document.querySelector("#denVal").innerHTML = den;
@@ -107,13 +111,14 @@ function myFunction() {
 </script>
 
 
-<div style="position:absolute;left:10%;padding:2%;margin-left:-121px;top:0px;width:312px;height:300px;border-style:groove;overflow:hidden;background-color: #bbbab5;top:10%;">
+<div style="position:absolute;left:10%;padding:2%;margin-left:-121px;top:0px;width:312px;height:330px;border-style:groove;overflow:hidden;background-color: #bbbab5;top:10%;">
 	<div> Bill No....<input id="billNo" type="text" value="B6923"/> </div> </br>
 	<div> Local Id...<input id="localId" type="text" value="00447658"  /> </div> </br>
 	<div> Date........<input id="dateId" type="text" value="31/01/23" /> </div> </br>
 	<div> Time.......<input id="timeId" type="text"  value="15:21" /> </div> </br>
 	<div> Vol.........<input id="volId" type="text" value='00015.00'/> </div> </br>
 	<div> Rate........<input id="rateId" type="text" value='092.52'/> </div> </br>
+	<div> Amount........<input id="amountId" type="text" value='4000.00'/> </div> </br>
 	<div> Product........<input id="productID" type="text" value='Diesel'/> </div> </br>
 	<div> <input id="setBut" type="button" value='Set Values' onclick="myFunction()" style='background:green;color:white'/> </div> </br>
 	
